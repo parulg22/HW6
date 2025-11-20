@@ -1,0 +1,29 @@
+Package: HW6
+Type: Package
+Title: Sparse Numeric Vector Class and Methods Using S4
+Version: 0.1.0
+Authors@R: 
+    person("Parul", "Gupta",
+           email = "parulg428@utexas.edu",
+           role = c("aut", "cre"))
+Description:
+    Implements an S4 class 'sparse_numeric' for storing one-dimensional
+    numeric vectors efficiently when many entries are zero. The package
+    includes methods for arithmetic operations, coercion between dense and
+    sparse formats, vector means, Euclidean norms, and standardization
+    without expanding to a dense representation. Additional helper
+    functions and unit tests illustrate proper use of S4 classes, generics,
+    documentation, and testthat-based validation.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports:
+    methods,
+    graphics,
+    stats
+Suggests:
+    testthat (>= 3.0.0),
+    covr
+Config/testthat/edition: 3
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
